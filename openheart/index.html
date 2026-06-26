@@ -139,7 +139,8 @@ section{position:relative}
 .portrait::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.45);border-radius:18px}
 .profile .name{font-family:var(--latin);font-size:1.7rem;color:var(--gold-solid);letter-spacing:.06em;margin-bottom:.1em}
 .profile .role{font-size:.82rem;letter-spacing:.24em;color:var(--ink-faint);text-transform:uppercase;margin-bottom:1.4em}
-@media(max-width:760px){.profile-grid{grid-template-columns:1fr}.portrait{max-width:360px;margin:0 auto}.teaparty p br{display:none}}
+.m-on{display:none}
+@media(max-width:760px){.profile-grid{grid-template-columns:1fr}.portrait{max-width:360px;margin:0 auto}.m-off{display:none}.m-on{display:inline}}
 .teaparty{margin-top:38px;background:var(--paper);border-radius:18px;padding:clamp(24px,4vw,40px);
   box-shadow:0 16px 44px -30px rgba(120,80,60,.5);border:1px solid rgba(220,198,166,.45);text-align:center}
 .teaparty p{color:var(--ink-soft);font-size:1rem;margin:0 auto;max-width:42em}
@@ -221,7 +222,7 @@ footer .fcopy{font-size:.74rem;color:#92836c;margin-top:2em;letter-spacing:.08em
 <section class="sec">
   <div class="read prose reveal">
     <p class="center welcome-note">はじめまして。<br>atelier ZEN の mami です。</p>
-    <p class="center big" style="margin:1.4em 0">私は、この人生を<br>お腹いっぱい遊び尽くしたいと思っています。</p>
+    <p class="center big" style="margin:1.4em 0">私は、この人生を<br>お腹いっぱい遊び尽くしたいと<br class="m-on">思っています。</p>
     <ul class="play">
       <li>大好きな服を着て、</li>
       <li>行きたい場所へ行って、</li>
@@ -343,7 +344,7 @@ footer .fcopy{font-size:.74rem;color:#92836c;margin-top:2em;letter-spacing:.08em
   </div>
   <div class="wrap teaparty reveal">
     <p class="tt">＼ ちょっとした、私のひみつ ／</p>
-    <p>私のそばには、くま王子やプーという大切な仲間たちがいます。<br>人にはぬいぐるみに見えるかもしれないけれど、<br>私にとっては「本質で」つながった、楽しい仲間たち。<br>夜になると、私はよく “お茶会” をしています。<br>夢の中なのか、本当の世界なのか、その辺はよく分かりません（笑）。<br>愛の仲間たちが好きな時に来て、好きな時に帰っていく、平和で楽しい世界です。<br><span class="em">そんなお茶会に、あなたもどうぞ ♡</span></p>
+    <p>私のそばには、くま王子やプーという大切な仲間たちがいます。<br class="m-off">人にはぬいぐるみに見えるかもしれないけれど、<br class="m-off">私にとっては「本質で」つながった、楽しい仲間たち。<br class="m-off">夜になると、私はよく “お茶会” をしています。<br class="m-off">夢の中なのか、本当の世界なのか、その辺はよく分かりません（笑）。<br class="m-off">愛の仲間たちが好きな時に来て、好きな時に帰っていく、平和で楽しい世界です。<br><span class="em">そんなお茶会に、あなたもどうぞ ♡</span></p>
   </div>
 </section>
 
